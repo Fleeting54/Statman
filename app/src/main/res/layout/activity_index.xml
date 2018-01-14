@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    tools:context="projects.andrew.buissink.statman.Index"
+    tools:layout_editor_absoluteY="73dp">
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:id="@+id/tbrwHead"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lblName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:width="112dp"
+                    android:text="Name" />
+
+                <TextView
+                    android:id="@+id/lblFGM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:width="50dp"
+                    android:text="FGM"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/lblFGA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:width="50dp"
+                    android:text="FGA"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/lbl3PM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:width="50dp"
+                    android:text="3PM"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/lbl3PA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:width="50dp"
+                    android:text="3PA"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/lblFTM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:text="FTM"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/lblFTA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:text="FTA"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/lblREB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:text="REB"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/lblAST"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:text="AST"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/lblSTL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:text="STL"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/lblTO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:text="TO"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/lblPF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:text="PF"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/lblPTS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:text="PTS"
+                    android:textAlignment="center" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_span="13">
+
+                    <TableLayout
+                        android:id="@+id/tblPlayers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:id="@+id/tbrwPlayer1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lblPlayer1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lucas Rosini" />
+
+                            <Button
+                                android:id="@+id/btnP1FGM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0"
+                                tools:longClickable="true" />
+
+                            <Button
+                                android:id="@+id/btnP1FGA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP13PM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP13PA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP1FTM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP1FTA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP1REB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP1AST"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP1STL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP1TO"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP1PF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP1PTS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:text="0" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tbrwPlayer2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lblPlayer2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Noah Barlow" />
+
+                            <Button
+                                android:id="@+id/btnP2FGM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP2FGA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP23PM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP23PA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP2FTM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP2FTA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP2REB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP2AST"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP2STL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP2TO"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP2PF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP2PTS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:text="0" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tbrwPlayer3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lblPlayer3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ben Elliot" />
+
+                            <Button
+                                android:id="@+id/btnP3FGM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP3FGA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP33PM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP33PA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP3FTM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP3FTA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP3REB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP3AST"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP3STL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP3TO"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP3PF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP3PTS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:text="0" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tbrwPlayer4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lblPlayer4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Noah Salaheddine" />
+
+                            <Button
+                                android:id="@+id/btnP4FGM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP4FGA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP43PM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP43PA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP4FTM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP4FTA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP4REB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP4AST"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP4STL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP4TO"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP4PF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP4PTS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:text="0" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tbrwPlayer5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lblPlayer5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Zac Gason" />
+
+                            <Button
+                                android:id="@+id/btnP5FGM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP5FGA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP53PM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP53PA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP5FTM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP5FTA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP5REB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP5AST"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP5STL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP5TO"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP5PF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP5PTS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:text="0" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tbrwPlayer6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lblPlayer6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Joshua McCann" />
+
+                            <Button
+                                android:id="@+id/btnP6FGM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP6FGA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP63PM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP63PA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP6FTM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP6FTA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP6REB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP6AST"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP6STL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP6TO"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP6PF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP6PTS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:text="0" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tbrwPlayer7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lblPlayer7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Julian Clarke" />
+
+                            <Button
+                                android:id="@+id/btnP7FGM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP7FGA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP73PM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP73PA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP7FTM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP7FTA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP7REB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP7AST"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP7STL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP7TO"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP7PF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP7PTS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:text="0" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tbrwPlayer8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/lblPlayer8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Marcus Irgl" />
+
+                            <Button
+                                android:id="@+id/btnP8FGM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP8FGA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP83PM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP83PA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP8FTM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP8FTA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP8REB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP8AST"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP8STL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP8TO"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP8PF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:longClickable="true"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:onClick="button_pressed"
+                                android:text="0" />
+
+                            <Button
+                                android:id="@+id/btnP8PTS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="50dp"
+                                android:minWidth="50dp"
+                                android:text="0" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:id="@+id/btnSave"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="button_pressed"
+                                android:text="Save" />
+                        </TableRow>
+                    </TableLayout>
+
+                </ScrollView>
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+</android.support.constraint.ConstraintLayout>
